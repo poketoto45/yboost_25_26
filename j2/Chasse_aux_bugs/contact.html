@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Créa'Pulse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Créa'Pulse</a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Discutons de votre projet ensemble</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Parlons de votre projet</h2>
+                    <p>Notre équipe est là pour vous accompagner dans la concrétisation de vos idées. Remplissez le formulaire et nous vous recontacterons dans les 24 heures.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>📍 Adresse</h3>
+                            <p>42 Avenue de la Créativité<br>75015 Paris, France</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p>contact@creapulse.fr<br>hello@creapulse.fr</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📞 Téléphone</h3>
+                            <p>+33 1 23 45 67 89<br>Lun - Ven : 9h - 18h</p>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">LinkedIn</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service souhaité</label>
+                            <select id="service" name="service">
+                                <option value="">Sélectionnez un service</option>
+                                <option value="branding">Branding</option>
+                                <option value="web">Web Design</option>
+                                <option value="marketing">Marketing Digital</option>
+                                <option value="photo">Photographie & Vidéo</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="ux">UX/UI Design</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget estimé</label>
+                            <select id="budget" name="budget">
+                                <option value="">Sélectionnez votre budget</option>
+                                <option value="small">Moins de 5 000€</option>
+                                <option value="medium">5 000€ - 15 000€</option>
+                                <option value="large">15 000€ - 30 000€</option>
+                                <option value="enterprise">Plus de 30 000€</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Décrivez votre projet *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                Je souhaite recevoir la newsletter de Créa'Pulse
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Message envoyé !</h2>
+            <p>Merci pour votre message. Notre équipe vous répondra dans les plus brefs délais.</p>
+            <button class="modal-btn" id="closeModal">Fermer</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Créa'Pulse</h3>
+                    <p>Votre partenaire créatif pour une présence digitale impactante.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="LinkedIn">LI</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Créa'Pulse. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

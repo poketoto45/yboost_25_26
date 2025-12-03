@@ -45,7 +45,7 @@ function testExercice1() {
 function validerEmail(e){var r=false;if(e&&e.length>0){if(e.indexOf('@')>0){if(e.indexOf('.')>e.indexOf('@')){if(e.indexOf('@')===e.lastIndexOf('@')){if(e.split('@')[1].length>0){if(e.split('.')[e.split('.').length-1].length>=2){r=true;}}}}}}return r;}
 
 function testExercice2() {
-    const resultDiv = document.getElementById('result2');
+    const resultDiv = document.getElementById('result2'); 
     const emailInput = document.getElementById('input2').value.trim();
 
     if (!emailInput) {

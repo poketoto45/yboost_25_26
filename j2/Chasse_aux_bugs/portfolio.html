@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Créa'Pulse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Créa'Pulse</a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Notre Portfolio</h1>
+            <p>Découvrez nos dernières réalisations créatives</p>
+        </div>
+    </section>
+
+    <section class="carousel-section">
+        <div class="container">
+            <h2>Projets mis en avant</h2>
+            <div class="carousel">
+                <button class="carousel-btn prev" id="carouselPrev">&lt;</button>
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=900&h=500&fit=crop" alt="Projet 1">
+                            <div class="carousel-caption">
+                                <h3>Rebranding TechStart</h3>
+                                <p>Identité visuelle complète pour une startup tech innovante</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=500&fit=crop" alt="Projet 2">
+                            <div class="carousel-caption">
+                                <h3>E-commerce BioBoutique</h3>
+                                <p>Site e-commerce responsive pour une marque bio</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&h=500&fit=crop" alt="Projet 3">
+                            <div class="carousel-caption">
+                                <h3>Campagne Social GreenEarth</h3>
+                                <p>Stratégie marketing digital pour une ONG environnementale</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&h=500&fit=crop" alt="Projet 4">
+                            <div class="carousel-caption">
+                                <h3>Application Mobile FitLife</h3>
+                                <p>UX/UI design pour une app de fitness et bien-être</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="carouselNext">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-gallery">
+        <div class="container">
+            <h2>Tous nos projets</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Branding Projet 1">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Logo Design - Café Moderne</h3>
+                        <p>Branding</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop" alt="Web Projet 1">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Site vitrine - Architecture Studio</h3>
+                        <p>Web Design</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="marketing">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=400&h=300&fit=crop" alt="Marketing Projet 1">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Campagne Instagram - Mode Éthique</h3>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400&h=300&fit=crop" alt="Branding Projet 2">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Charte graphique - Restaurant Fusion</h3>
+                        <p>Branding</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=300&fit=crop" alt="Web Projet 2">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Plateforme SaaS - Gestion de projet</h3>
+                        <p>Web Design</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="marketing">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=300&fit=crop" alt="Marketing Projet 2">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Newsletter Design - Tech News</h3>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop" alt="Web Projet 3">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portfolio Photographe</h3>
+                        <p>Web Design</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop" alt="Branding Projet 3">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Packaging - Cosmétiques naturels</h3>
+                        <p>Branding</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="marketing">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Marketing Projet 3">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Stratégie LinkedIn - B2B Software</h3>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Votre projet sera le prochain</h2>
+            <p>Discutons de vos besoins et créons ensemble quelque chose d'exceptionnel</p>
+            <a href="contact.html" class="cta-button">Lancer votre projet</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Créa'Pulse</h3>
+                    <p>Votre partenaire créatif pour une présence digitale impactante.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="LinkedIn">LI</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Créa'Pulse. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
